@@ -1,0 +1,52 @@
+:root {
+    --bs-body-font-family: Arial, Helvetica, sans-serif;
+}
+.hero {
+    height: 100vh;
+    background-image: url("../images/background.jpg"); /* Background from https://unsplash.com/photos/photo-frames-inside-building-QbX8A8eHfzw */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.navbar {
+    --bs-navbar-color: rgba(255,255,255,0.8);
+    --bs-navbar-hover-color: #ffffff;
+    --bs-navbar-active-color: #ffffff;
+
+    transition: all 0.3s ease;
+    background: transparent;
+    color:white;
+}
+.navbar.scrolled {
+    --bs-navbar-color: rgba(0,0,0,0.8);
+    --bs-navbar-hover-color: #000;
+    --bs-navbar-active-color: #000;
+
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo {
+    transition: opacity 0.3s ease;
+    width: 80px;
+}
+.logo-dark {
+    display: none;
+}
+.navbar.scrolled .logo-light {
+    display: none;
+}
+.navbar.scrolled .logo-dark {
+    display: inline-block;
+}
+.navbar-toggler{
+    border-color: transparent;
+    color: #ffffff;
+}
+.navbar.scrolled .navbar-toggler {
+    color: #000000;
+}
