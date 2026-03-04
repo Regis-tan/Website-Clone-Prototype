@@ -10,18 +10,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="vh-100">
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top nav-underline">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">
             <img src="assets/images/Logo-Dark.png" class="logo logo-dark">
             <img src="assets/images/Logo-Light.png" class="logo logo-light">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa-solid fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-3">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+        <ul class="navbar-nav mb-2 mb-lg-0 gap-3 text-end">
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
@@ -43,42 +43,82 @@
     </nav>
 
     <section class="hero"></section>
+
     <div class="container-fluid">
-    <div class="container mt-4 ms-4 w-50">
+    <div class="row mt-4">
+    <div class="col-lg-6 ms-lg-4">
         <h2>Lorem Ipsum</h2>
         <br>
         <h5 class="ms-2 w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</h5>
         <br>
         <h5 class="ms-2 w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</h5>
     </div>
+
+    <hr class="w-75 clearfix d-md-none mx-auto mt-4"/>
+
+    <div class="col-lg-5 mt-4">
+    <div class="row g-3">
+        <div class="col-6">
+        <div class="img-wrapper rounded">
+            <img src="assets/images/Placeholder1.jpg" loading="lazy" class="img-fluid">
+        </div>
+        </div>
+        <div class="col-6">
+        <div class="img-wrapper rounded">
+            <img src="assets/images/Placeholder2.jpg" loading="lazy" class="img-fluid">
+        </div>
+        </div>
+        <div class="col-6">
+        <div class="img-wrapper rounded">
+            <img src="assets/images/Placeholder3.jpg" loading="lazy" class="img-fluid">
+        </div>
+        </div>
+        <div class="col-6">
+        <div class="img-wrapper rounded">
+            <img src="assets/images/Placeholder4.jpg" loading="lazy" class="img-fluid">
+        </div>
+        </div>
+    </div>
+    </div>
+    </div>
     </div>
 
-    <footer class="bg-dark border-top mt-5">
-    <div class="container py-5 mx-auto">
-    <div class="row justify-content-center">
-        <div class="col mb-3 align-items-start d-flex">
-            <img src="assets/images/Logo-Light.png" width="200px">
+    <div class="container-fluid px-0 mx-0 my-5" style="background-color: rgba(0, 0, 0, .90);">
+    <footer class="text-center text-lg-start text-white">
+        <div class="container p-4 pb-0">
+        <section class="">
+            <div class="row">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 mb-3">
+                <img src="assets/images/Logo-Light.png" width="180px" class="mb-4">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+
+            <hr class="w-100 clearfix d-md-none"/>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3"></div>
+
+            <!-- <hr class="w-100 clearfix d-md-none"/> -->
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3"></div>
+
+            <!-- <hr class="w-100 clearfix d-md-none"/> -->
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3 mb-3">
+                <h6 class="mb-3 font-weight-bold">Connect with us</h6>
+                <a class="text-decoration-none text-white" href="#" role="button"><i class="fa-brands fa-facebook-f text-white mx-1 mb-2"></i>Facebook</a>
+                <br>
+                <a class="text-decoration-none text-white" href="#" role="button"><i class="fa-brands fa-instagram text-white mx-1 mb-2"></i>Instagram</a>
+            </div>
+            </div>
+        </section>
         </div>
-        <div class="col mb-3 d-flex align-items-top gap-3 text-secondary">
-            <a href="#" class="text-secondary">Terms & Conditions</a>
-            <a href="#" class="text-secondary">Privacy Policy</a>
-            <p class="mb-0">© 2026 SKOPE</p>
+        <div class="text-center pb-3 pt-4" style="background-color: rgba(0, 0, 0, .45)">
+            <a href="#" class="mx-2 text-white-50">Terms & Conditions</a>
+            <a href="#" class="mx-2 text-white-50">Privacy Policy</a>
+            <span class="mx-2 text-white-50">© 2026 SKOPE</span>
         </div>
-        <div class="col mb-3 text-secondary d-flex flex-column gap-1 align-items-end">
-            <p class="mb-2"><u>Connect with us</u></p>
-            <a href="#" class="text-secondary text-decoration-none">
-                <i class="fab fa-facebook-f me-2"></i> Facebook
-            </a>
-            <a href="#" class="text-secondary text-decoration-none">
-                <i class="fab fa-twitter me-2"></i> Twitter
-            </a>
-            <a href="#" class="text-secondary text-decoration-none">
-                <i class="fab fa-instagram me-2"></i> Instagram
-            </a>
-        </div>
-    </div>
-    </div>
     </footer>
+    </div>
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
